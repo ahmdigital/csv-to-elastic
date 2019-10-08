@@ -1,0 +1,37 @@
+{
+  "name": "csv-to-elastic",
+  "version": "1.0.0",
+  "description": "Parse some CSV into elasticsearch, adding sentiment analysis",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build; node lib/index.js",
+    "dev": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "keywords": [
+    "elasticsearch",
+    "sentiment",
+    "csv"
+  ],
+  "author": "Cameron Chamberlain",
+  "license": "GPL3+",
+  "dependencies": {
+    "@elastic/elasticsearch": "^6.8.2",
+    "commander": "^3.0.2",
+    "csvtojson": "^2.0.10",
+    "lodash": "^4.17.15",
+    "sentiment": "^5.0.2",
+    "stemmer": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/csvtojson": "^1.1.5",
+    "@types/elasticsearch": "^5.0.35",
+    "@types/lodash": "^4.14.141",
+    "@types/node": "^12.7.9",
+    "@types/stemmer": "^1.0.2",
+    "nodemon": "^1.19.3",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}
