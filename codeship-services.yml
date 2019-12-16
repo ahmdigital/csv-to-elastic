@@ -1,0 +1,5 @@
+csv-to-elastic:
+  build:
+    image: csv-to-elastic
+    dockerfile: Dockerfile
+  cached: true
