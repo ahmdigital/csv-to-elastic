@@ -1,0 +1,3 @@
+- name: Build
+  service: csv-to-elastic
+  command: npm run build
