@@ -7,7 +7,9 @@
     "start": "npm run build; node lib/index.js",
     "dev": "npm run build:live",
     "build": "tsc -p .",
-    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "elasticsearch",
@@ -22,7 +24,8 @@
     "csvtojson": "^2.0.10",
     "lodash": "^4.17.15",
     "sentiment": "^5.0.2",
-    "stemmer": "^1.0.4"
+    "stemmer": "^1.0.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/csvtojson": "1.1.5",
@@ -38,5 +41,6 @@
     "extends": [
       "@ahmdigital"
     ]
-  }
+  },
+  "snyk": true
 }
