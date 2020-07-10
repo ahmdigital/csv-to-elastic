@@ -20,7 +20,7 @@
     "@elastic/elasticsearch": "^6.8.2",
     "commander": "^5.0.0",
     "csvtojson": "^2.0.10",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.16",
     "sentiment": "^5.0.2",
     "stemmer": "^1.0.4"
   },
