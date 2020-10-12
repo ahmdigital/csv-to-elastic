@@ -1,13 +1,11 @@
-FROM node:12.18.4
+FROM node:lts
 
-RUN mkdir -p /var/app
-WORKDIR /var/app
+WORKDIR /root/app
 
-COPY tsconfig.json /var/app
+COPY tsconfig.json ./
 
-COPY package.json /var/app
-COPY package-lock.json /var/app
+RUN npm i -g npm@latest
+COPY package.json package-lock.json ./
+RUN npm ci --quiet --no-optional && npm cache clean --force
 
-RUN npm install
-
-COPY src /var/app/src
+COPY src ./src
