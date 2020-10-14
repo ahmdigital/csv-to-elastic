@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/csvtojson": "1.1.5",
     "@types/elasticsearch": "5.0.36",
-    "@types/lodash": "4.14.161",
+    "@types/lodash": "4.14.162",
     "@types/node": "12.12.30",
     "@types/stemmer": "1.0.2",
     "nodemon": "2.0.4",
