@@ -28,7 +28,7 @@
     "@types/csvtojson": "1.1.5",
     "@types/elasticsearch": "5.0.40",
     "@types/lodash": "4.14.186",
-    "@types/node": "12.20.55",
+    "@types/node": "16.18.0",
     "@types/stemmer": "1.0.2",
     "nodemon": "2.0.20",
     "ts-node": "9.1.1",
@@ -40,6 +40,6 @@
     ]
   },
   "engines": {
-    "node": "^14"
+    "node": "^16.0.0"
   }
 }
